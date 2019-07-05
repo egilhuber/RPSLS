@@ -10,15 +10,19 @@ namespace RPSLS
     {
 
         //member variables 
-        string name;
+        public string name;
+        public int score;
         //ctor
         public Player(string name)
         {
             this.name = name;
+            score = 0;
         }
 
         //member methods
         abstract public string ChooseGesture();
+
+        abstract public int increaseScore();
 
     }
 }

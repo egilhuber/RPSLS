@@ -10,6 +10,9 @@ namespace RPSLS
     {
 
         //member variables
+        public string OpName;
+        public string OgName;
+        public string TwoName;
 
         //ctor
         public Game()
@@ -57,16 +60,13 @@ namespace RPSLS
             string PlayerQuantity = Console.ReadLine();
             Console.WriteLine($"{PlayerQuantity}? Great!");
             Console.WriteLine("---");
-            string OpName;
-            String OgName;
-            String TwoName;
+
             switch (PlayerQuantity)
             {
                 case "1":
                     Console.WriteLine("Enter player one name.");
                     OpName = Console.ReadLine();
                     Console.WriteLine($"Hello {OpName}");
-                    Console.ReadLine();
                     return OpName;
                 case "2":
                     Console.WriteLine("Enter player one name.");
@@ -75,12 +75,12 @@ namespace RPSLS
                     Console.WriteLine("Enter player two name.");
                     TwoName = Console.ReadLine();
                     Console.WriteLine($"Hello {TwoName}");
-                    Console.ReadLine();
                     return OgName + TwoName;
 
             }
             return ("fin");
         }
+
 
 
     }

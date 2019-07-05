@@ -10,12 +10,14 @@ namespace RPSLS
     {
 
         //member variables 
-        string name;
+        public string name;
         public string chosenGesture;
+        public int score;
         //ctor
         public Human(string name) : base (name) 
         {
             this.name = name;
+            score = 0;
         }
 
         //member methods
@@ -23,6 +25,15 @@ namespace RPSLS
         {
             chosenGesture = Console.ReadLine();
             return chosenGesture;
+        }
+
+        public override int increaseScore()
+        {
+            score++;
+            Console.WriteLine($"{name} score: {score}");
+            Console.WriteLine("---");
+            return score;
+
         }
 
     }

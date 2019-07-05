@@ -10,12 +10,14 @@ namespace RPSLS
     {
 
         //member variables
-        string name;
+        public string name;
         public string selection;
+        public int score;
         //ctor
         public ComputerAi(string name):base(name)
         {
             this.name = name;
+            score = 0; 
         }
         //member methods
 
@@ -43,38 +45,41 @@ namespace RPSLS
             {
                 selection = CompGestures[0];
                 Console.WriteLine(selection);
-                Console.ReadLine();
                 return selection;
             }
             else if (computerChoice == 1)
             {
                 selection = CompGestures[1];
                 Console.WriteLine(selection);
-                Console.ReadLine();
                 return selection;
             }
             else if (computerChoice == 2)
             {
                 selection = CompGestures[2];
                 Console.WriteLine(selection);
-                Console.ReadLine();
                 return selection;
             }
             else if (computerChoice == 3)
             {
                 selection = CompGestures[3];
                 Console.WriteLine(selection);
-                Console.ReadLine();
                 return selection;
             }
             else if (computerChoice == 4)
             {
                 selection = CompGestures[4];
                 Console.WriteLine(selection);
-                Console.ReadLine();
                 return selection;
             }
             return ("a string");
+        }
+        public override int increaseScore()
+        {
+            score++;
+            Console.WriteLine($"Computer score: {score}");
+            Console.WriteLine("---");
+            return score;
+
         }
 
     }
