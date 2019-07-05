@@ -18,7 +18,7 @@ namespace RPSLS
         }
 
         //member methods
-        abstract public void ChooseGesture();
+        abstract public string ChooseGesture();
 
     }
 }

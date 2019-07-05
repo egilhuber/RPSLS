@@ -50,46 +50,38 @@ namespace RPSLS
                     break;
             }
         }
-        public void HowManyPlayers()
+        public string HowManyPlayers()
         {
             Console.WriteLine("---");
             Console.WriteLine("1 or 2 players?");
             string PlayerQuantity = Console.ReadLine();
             Console.WriteLine($"{PlayerQuantity}? Great!");
             Console.WriteLine("---");
+            string OpName;
+            String OgName;
+            String TwoName;
             switch (PlayerQuantity)
             {
                 case "1":
                     Console.WriteLine("Enter player one name.");
-                    string OpName = Console.ReadLine();
-                    Human PlayerOne = new Human(OpName);
+                    OpName = Console.ReadLine();
                     Console.WriteLine($"Hello {OpName}");
-                    Console.WriteLine("Please name the computer.");
-                    string compName = Console.ReadLine();
-                    ComputerAi Dell = new ComputerAi(compName);
-                    Console.WriteLine($"You have named the computer {compName}.");
                     Console.ReadLine();
-                    break;
+                    return OpName;
                 case "2":
                     Console.WriteLine("Enter player one name.");
-                    string OgName = Console.ReadLine();
-                    Human FirstPlayer = new Human(OgName);
+                    OgName = Console.ReadLine();
                     Console.WriteLine($"Hello {OgName}");
                     Console.WriteLine("Enter player two name.");
-                    string TwoName = Console.ReadLine();
-                    Human SecondPlayer = new Human(TwoName);
+                    TwoName = Console.ReadLine();
                     Console.WriteLine($"Hello {TwoName}");
                     Console.ReadLine();
-                    break;
+                    return OgName + TwoName;
 
             }
-                
+            return ("fin");
         }
-        public void PlayGame()
-        {
-            Console.WriteLine();
 
-        }
 
     }
 }

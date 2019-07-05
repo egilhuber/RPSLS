@@ -11,6 +11,7 @@ namespace RPSLS
 
         //member variables 
         string name;
+        public string chosenGesture;
         //ctor
         public Human(string name) : base (name) 
         {
@@ -18,9 +19,10 @@ namespace RPSLS
         }
 
         //member methods
-        public override void ChooseGesture()
+        public override string ChooseGesture()
         {
-            string chosenGesture = Console.ReadLine();
+            chosenGesture = Console.ReadLine();
+            return chosenGesture;
         }
 
     }
