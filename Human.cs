@@ -30,10 +30,19 @@ namespace RPSLS
         public override int increaseScore()
         {
             score++;
-            Console.WriteLine($"{name} score: {score}");
-            Console.WriteLine("---");
-            return score;
-
+            if (score >= 2)
+            {
+                Console.WriteLine("player wins game");
+                Console.WriteLine($"{name}'s final score: {score}");
+                Console.ReadLine();
+                return score;
+            }
+            else
+            {
+                Console.WriteLine($"{name} score: {score}");
+                Console.WriteLine("---");
+                return score;
+            }
         }
 
     }

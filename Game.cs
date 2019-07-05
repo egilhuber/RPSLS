@@ -81,7 +81,148 @@ namespace RPSLS
             return ("fin");
         }
 
+        //public void RunSinglePlayerGame()
+        //{
+        //    while (PlayerOne.score < 2 && Dell.score < 2)
+        //    {
+        //        Console.WriteLine("---");
+        //        Console.WriteLine("Rock, Paper, Scissors, Lizard, or Spock");
+        //        PlayerOne.ChooseGesture();
+        //        Dell.ChooseGesture();
 
+
+        //        if (PlayerOne.chosenGesture == Dell.selection)
+        //        {
+        //            Console.WriteLine("Tie");
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Rock" && Dell.selection == "Paper")
+        //        {
+        //            Console.WriteLine(" computer wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Scissors" && Dell.selection == "Paper")
+        //        {
+        //            Console.WriteLine("player one  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Lizard" && Dell.selection == "Paper")
+        //        {
+        //            Console.WriteLine("player wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Spock" && Dell.selection == "Paper")
+        //        {
+        //            Console.WriteLine("computer  wins");
+        //            Dell.increaseScore();
+        //        }
+        //        //
+        //        else if (PlayerOne.chosenGesture == "Paper" && Dell.selection == "Rock")
+        //        {
+        //            Console.WriteLine("player   wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Scissors" && Dell.selection == "Rock")
+        //        {
+        //            Console.WriteLine("computer  wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Lizard" && Dell.selection == "Rock")
+        //        {
+        //            Console.WriteLine("computer  wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Spock" && Dell.selection == "Rock")
+        //        {
+        //            Console.WriteLine("player  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        //
+        //        else if (PlayerOne.chosenGesture == "Rock" && Dell.selection == "Scissors")
+        //        {
+        //            Console.WriteLine("player  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Paper" && Dell.selection == "Scissors")
+        //        {
+        //            Console.WriteLine(" computer wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Lizard" && Dell.selection == "Scissors")
+        //        {
+        //            Console.WriteLine("computer  wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Spock" && Dell.selection == "Scissors")
+        //        {
+        //            Console.WriteLine("player  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        //
+        //        else if (PlayerOne.chosenGesture == "Rock" && Dell.selection == "Lizard")
+        //        {
+        //            Console.WriteLine("player  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Paper" && Dell.selection == "Lizard")
+        //        {
+        //            Console.WriteLine("computer  wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Scissors" && Dell.selection == "Lizard")
+        //        {
+        //            Console.WriteLine("player  wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Spock" && Dell.selection == "Lizard")
+        //        {
+        //            Console.WriteLine(" computer wins");
+        //            Dell.increaseScore();
+        //        }
+        //        //
+        //        else if (PlayerOne.chosenGesture == "Rock" && Dell.selection == "Spock")
+        //        {
+        //            Console.WriteLine(" computer wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Paper" && Dell.selection == "Spock")
+        //        {
+        //            Console.WriteLine(" player wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Scissors" && Dell.selection == "Spock")
+        //        {
+        //            Console.WriteLine(" computer wins");
+        //            Dell.increaseScore();
+        //        }
+        //        else if (PlayerOne.chosenGesture == "Lizard" && Dell.selection == "Spock")
+        //        {
+        //            Console.WriteLine(" player wins");
+        //            PlayerOne.increaseScore();
+        //        }
+        //    }
+        //}
+
+
+
+
+
+
+
+
+
+        //public void CheckScore(object playerA, object playerB)
+        //{
+        //    if (playerA.score > 2 && playerA.score > playerB.score)
+        //    {
+        //        Console.WriteLine($"{playerA.name} wins");
+        //        Console.ReadLine();
+        //    }
+        //    else if (playerB.score > 2 && playerB.score > playerA.score)
+        //    {
+        //        Console.WriteLine("Computer wins");
+        //        Console.ReadLine();
+        //    }
+        //}
 
     }
 }

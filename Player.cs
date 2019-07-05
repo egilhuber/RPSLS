@@ -24,5 +24,6 @@ namespace RPSLS
 
         abstract public int increaseScore();
 
+
     }
 }
