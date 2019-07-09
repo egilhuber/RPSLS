@@ -22,7 +22,7 @@ namespace RPSLS
         //member methods
         abstract public string ChooseGesture();
 
-        abstract public int increaseScore();
+        abstract public int IncreaseScore(string aName);
 
 
     }

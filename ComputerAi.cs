@@ -33,11 +33,11 @@ namespace RPSLS
             int computerChoice =  RandomNumber(0, 4);
             //Console.WriteLine("computer: " + computerChoice);
             List<string> CompGestures = new List<string>();
-            CompGestures.Add("Rock");
-            CompGestures.Add("Paper");
-            CompGestures.Add("Scissors");
-            CompGestures.Add("Lizard");
-            CompGestures.Add("Spock");
+            CompGestures.Add("rock");
+            CompGestures.Add("paper");
+            CompGestures.Add("scissors");
+            CompGestures.Add("lizard");
+            CompGestures.Add("spock");
 
 
 
@@ -73,19 +73,19 @@ namespace RPSLS
             }
             return ("a string");
         }
-        public override int increaseScore()
+        public override int IncreaseScore(string cName)
         {
             score++;
             if (score >= 2)
             {
-                Console.WriteLine("computer wins game");
-                Console.WriteLine($"{name}'s final score: {score}");
+                Console.WriteLine($"{cName} wins game");
+                Console.WriteLine($"{cName}'s final score: {score}");
                 Console.ReadLine();
                 return score;
             }
             else
             {
-                Console.WriteLine($"{name} score: {score}");
+                Console.WriteLine($"{cName} score: {score}");
                 Console.WriteLine("---");
                 return score;
             }

@@ -24,22 +24,49 @@ namespace RPSLS
         public override string ChooseGesture()
         {
             chosenGesture = Console.ReadLine();
-            return chosenGesture;
+            chosenGesture.ToLower();
+            if (chosenGesture == "rock")
+            {
+               return chosenGesture.ToLower(); 
+            }
+            else if (chosenGesture == "paper")
+            {
+                return chosenGesture.ToLower();
+            }
+            else if (chosenGesture == "scissors")
+            {
+                return chosenGesture.ToLower();
+            }
+            else if (chosenGesture == "lizard")
+            {
+                return chosenGesture.ToLower();
+            }
+            else if (chosenGesture == "spock")
+            {
+                return chosenGesture.ToLower();
+            }
+            else
+            {
+                Console.WriteLine("Invalid entry.");
+                ChooseGesture();
+            }
+            return "shouldn't be here";
+
         }
 
-        public override int increaseScore()
+        public override int IncreaseScore(string pName)
         {
             score++;
             if (score >= 2)
             {
-                Console.WriteLine("player wins game");
-                Console.WriteLine($"{name}'s final score: {score}");
+                Console.WriteLine($"{pName} wins game");
+                Console.WriteLine($"{pName}'s final score: {score}");
                 Console.ReadLine();
                 return score;
             }
             else
             {
-                Console.WriteLine($"{name} score: {score}");
+                Console.WriteLine($"{pName} score: {score}");
                 Console.WriteLine("---");
                 return score;
             }
