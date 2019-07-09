@@ -31,7 +31,6 @@ namespace RPSLS
             }
            
             int computerChoice =  RandomNumber(0, 4);
-            //Console.WriteLine("computer: " + computerChoice);
             List<string> CompGestures = new List<string>();
             CompGestures.Add("rock");
             CompGestures.Add("paper");

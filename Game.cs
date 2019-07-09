@@ -23,8 +23,6 @@ namespace RPSLS
 
         }
 
-
-
         //member methods
         public void PromptRules()
         {
@@ -37,6 +35,7 @@ namespace RPSLS
                 case "y":
                 case "Yes":
                 case "YES":
+                case "Y":
                     Console.WriteLine("---");
                     Console.WriteLine("Rock crushes scissors and lizard \n" +
                         "Paper covers rock and disproves Spock \n" +
@@ -48,6 +47,7 @@ namespace RPSLS
                 case "n":
                 case "No":
                 case "NO":
+                case "N":
                     Console.WriteLine("---");
                     Console.WriteLine("okay");
                     break;
@@ -87,8 +87,6 @@ namespace RPSLS
             }
             return ("shouldn't be here");
         }
-
-
         public string NamePlayerOne()
         {
             Console.WriteLine("Enter player one name.");
@@ -141,7 +139,6 @@ namespace RPSLS
             Console.WriteLine($"Hello {OpName}");
             return OpName;
         }
-
         public string NameComputer()
         {
             Console.WriteLine("Please name the computer.");
@@ -192,7 +189,6 @@ namespace RPSLS
             Console.WriteLine($"Computer's name is {CompName}");
             return CompName;
         }
-
         public string NamePlayerTwo()
         {
             Console.WriteLine("Enter player two name.");
@@ -244,14 +240,9 @@ namespace RPSLS
             return TwoName;
         }
 
-
-
         Human PlayerOne = new Human("Player One");
         ComputerAi Dell = new ComputerAi("Computer");
         Human PlayerTwo = new Human("Player 2");
-
-        
-
 
         public void RunSinglePlayerGame(string pName, string cName)
         {
@@ -374,9 +365,6 @@ namespace RPSLS
                 }
             }
         }
-
-
-
         public void RunTwoPlayerGame(string p1Name, string p2Name)
         {
             while (PlayerOne.score < 2 && PlayerTwo.score < 2)
